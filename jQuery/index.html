@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>TODO - jQuery</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1>todos</h1>
+          <div>
+            <input class="form-control mainInput" type="text" placeholder="What needs to be done?">
+          </div>
+          <ul class="tasks">
+          </ul>
+          <div class="summary">
+            <span class="summary-itemLeft"></span>
+            <span class="summary-filters">
+              <input id="all" checked name="filter" class="filter" type="radio" value="test" />
+              <label for="all">All</label>
+              <input id="active" name="filter" class="filter" type="radio" value="test" />
+              <label for="active">Active</label>
+              <input id="completed" name="filter" class="filter" type="radio" value="test" />
+              <label for="completed">Completed</label>
+            </span>
+            <span class="summary-clearCompleted">Clear completed</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script> -->
+      <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script> -->
+      <script src="js/vendor/jquery-1.11.2.js"><\/script>
+      <script src="js/vendor/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+</html>
