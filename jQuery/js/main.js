@@ -34,12 +34,18 @@ $(function(){
     }
   });
 
-  $tasks.find('.task').hover(function(e){
-      $target = $(e.target).find(':after');
-      $target.show();
-  });
+  // $tasks.find('.task').hover(function(e){
+  //     $target = $(e.target).find(':after');
+  //     $target.show();
+  // });
+
   $tasks.on('click', function(e){
       $target = $(e.target);
+
+      if($target.is('.task-text') && isDoubleClick(e)){
+        // edit task
+      }
+
       if($target.is('.task-check')){
         if ($target.is(':checked')){
           $target.parents('.task').addClass('completed');
@@ -56,6 +62,11 @@ $(function(){
   $clearCompleted.on('click', function(){
     $('.completed .task-check', $tasks).click();
   });
+
+  function isDoubleClick(e){
+    console.log(e);
+    
+  }
 
   function updateSummary() {
     if($tasks.children('li').length){
